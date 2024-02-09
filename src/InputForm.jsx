@@ -1,24 +1,22 @@
 import { Button } from "./Button";
-import { useState } from "react";
 import { clipBoardAPI } from "./api";
 const InputForm = function ({ image, handleNewImage }) {
-  const [prompt, setPrompt] = useState("");
   const handleSubmit = async function (e) {
     e.preventDefault();
-    const newImageURL = await clipBoardAPI(image, prompt);
+    const newImageURL = await clipBoardAPI(image);
     handleNewImage(newImageURL);
   };
   return (
     <section className="input-form">
       <form onSubmit={handleSubmit}>
-        <input
+        {/* <input
           type="text"
           placeholder="Enter your Prompt"
           className="animate-borderColor"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-        />
-        <Button className="retryBtn">Generate</Button>
+        /> */}
+        <Button className="retryBtn">Remove Background</Button>
       </form>
     </section>
   );
