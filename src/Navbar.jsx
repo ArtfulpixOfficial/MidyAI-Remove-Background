@@ -5,10 +5,12 @@ export function Navbar({
   handleOriginalImage,
   newImage,
   handleNewImage,
+  handleLoading,
 }) {
   const reset = function () {
     handleOriginalImage(null);
     handleNewImage(null);
+    handleLoading(false);
   };
 
   const handleDownload = function () {
