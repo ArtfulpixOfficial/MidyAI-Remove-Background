@@ -6,7 +6,7 @@ export function Message() {
         MIDYAI REMOVE BACKGROUND
       </h1>
       <h2 className="text-xl font-semibold text-gray-600 dark:text-gray-400">
-        Remove background online in 1 click
+        Erase backgrounds instantly with one tap
       </h2>
     </section>
   );
